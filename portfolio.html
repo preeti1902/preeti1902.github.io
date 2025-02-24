@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preeti Kumari - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #49116f;
+            --secondary-color: #141463;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-bottom: 70px;
+        }
+        .navbar {
+            background-color: var(--primary-color) !important;
+            box-shadow: 0 2px 4px rgba(62, 174, 10, 0.1);
+        }
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .section-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+        }
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 15px 15px 0 0 !important;
+        }
+        .skill-item {
+            background-color: #f8f9fa;
+            border-radius: 20px;
+            padding: 8px 15px;
+            margin: 5px;
+            display: inline-block;
+        }
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">PK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="hero-section">
+        <h1 class="display-4">Preeti Kumari</h1>
+        <p class="lead">Aspiring Software Engineer | Web & Backend Developer</p>
+    </div>
+    <div class="container">
+        <div class="card section-card" id="about">
+            <div class="card-header"><h2>About Me</h2></div>
+            <div class="card-body"><p>Aspiring Software Engineer with a strong foundation in computer science fundamentals, problem-solving and scalable software solutions.</p></div>
+        </div>
+
+        <div class="card section-card" id="skills">
+            <div class="card-header"><h2>Skills</h2></div>
+            <div class="card-body">
+                <p><strong>Technical Skills:</strong> C++, Python, JavaScript, HTML, Tailwind, CSS, Java, SQL</p>
+                <p><strong>Skills:</strong> Problem-Solving, Critical Thinking, Leadership, Team Collaboration</p>
+                <p><strong>Core Subjects:</strong> OOPs, Data Structures & Algorithms, Operating Systems, Database Management System, Computer Networks</p>
+                <p><strong>Tools/Frameworks:</strong> Git, GitHub, Django, Flask, React.js, VS Code</p>
+            </div>
+        </div>
+
+        <div class="card section-card" id="experience">
+            <div class="card-header"><h2>Experience</h2></div>
+            <div class="card-body"><p><strong>Full Stack Development Intern - VIEH Group</strong> (Nov 2023 - Jan 2024)</p>
+                <ul class="list-disc ml-6 mt-2">
+                    <li>Developed scalable web applications using Python and Django.</li>
+                    <li>Collaborated using Git and GitHub for version control.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card section-card" id="projects">
+            <div class="card-header"><h2>Projects</h2></div>
+            <div class="card-body"><p><strong>Tourism Express:</strong></p>
+                <ul class="list-disc ml-6 mt-2">
+                    <li>Developed a web application using Django for destination management and travel package bookings.</li>
+                    <li>Integrated secure payment processing using Razorpay for seamless transactions.</li>
+                    <li>Implemented a robust database management system for efficient data handling.</li>
+                </ul>
+            </div>
+
+            <div class="card-body"><p><strong>Turf Management System:</strong></p>
+                <ul class="list-disc ml-6 mt-2">
+                    <li>Built a Flask-based application for streamlined user registration and turf booking.</li>
+                    <li>Integrated SQL for efficient and scalable data management.</li>
+                    <li>Designed a user-friendly interface to enhance the user experience.</li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="card section-card" id="contact">
+            <div class="card-header"><h2>Contact</h2></div>
+            <div class="card-body"><p>Email: <a href="mailto:preeti190801@gmail.com">preeti190801@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/iam-preeti-kumari/" class="text-blue-600">iam-preeti-kumari</a></p>
+            <p>GitHub: <a href="https://github.com/preeti1902" class="text-blue-600"> preeti-kumari</a></p>
+            </div>
+        </div>
+    </div>
+    <footer><p>&copy; 2025 Preeti Kumari | All Rights Reserved</p></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
